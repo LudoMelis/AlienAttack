@@ -9,6 +9,7 @@ height = 156.0
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(56, 131)
+motion_mode = 1
 script = ExtResource("1_k2olc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
