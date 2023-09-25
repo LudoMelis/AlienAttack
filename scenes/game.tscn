@@ -6,6 +6,7 @@
 [node name="Game" type="Node2D"]
 
 [node name="Background" type="TextureRect" parent="."]
+z_index = -100
 offset_right = 1294.0
 offset_bottom = 738.0
 texture = ExtResource("1_mgcnx")
@@ -13,4 +14,3 @@ stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("2_3tq2c")]
 position = Vector2(115, 361)
-scale = Vector2(0.52, 0.52)
