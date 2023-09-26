@@ -14,7 +14,6 @@ func _process(delta):
 
 
 func _on_timer_timeout():
-	print("Timeout") # Replace with function body.
 	spawnEnemy()
 	
 func spawnEnemy():

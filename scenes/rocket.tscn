@@ -9,6 +9,8 @@ height = 76.0
 
 [node name="Rocket" type="Area2D"]
 z_index = -1
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_dt4bh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -22,4 +24,5 @@ shape = SubResource("CapsuleShape2D_7cimp")
 [node name="VisibleNotifier" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(-29, 0)
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="screen_exited" from="VisibleNotifier" to="." method="_on_visible_notifier_screen_exited"]
