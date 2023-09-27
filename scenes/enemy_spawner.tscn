@@ -25,6 +25,42 @@ position = Vector2(1362, 532)
 [node name="SpawnPos6" type="Marker2D" parent="SpawnPositions"]
 position = Vector2(1362, 654)
 
+[node name="SpawnPos7" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 19)
+
+[node name="SpawnPos8" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 129)
+
+[node name="SpawnPos9" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 247)
+
+[node name="SpawnPos10" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 365)
+
+[node name="SpawnPos11" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 489)
+
+[node name="SpawnPos12" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 611)
+
+[node name="SpawnPos13" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 99)
+
+[node name="SpawnPos14" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 209)
+
+[node name="SpawnPos15" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 327)
+
+[node name="SpawnPos16" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 445)
+
+[node name="SpawnPos17" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 569)
+
+[node name="SpawnPos18" type="Marker2D" parent="SpawnPositions"]
+position = Vector2(1362, 691)
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true

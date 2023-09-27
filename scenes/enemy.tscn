@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dk0spgjb4fn8r" path="res://assets/textures/enemy_ship.png" id="2_v2ob5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m5b24"]
-radius = 156.0
-height = 558.0
+radius = 34.9999
+height = 160.0
 
 [node name="Enemy" type="Area2D"]
 collision_layer = 2
@@ -14,7 +14,7 @@ script = ExtResource("1_wjstb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = -1.5708
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.1252, 0.1252)
 texture = ExtResource("2_v2ob5")
 flip_h = true
 
@@ -25,7 +25,7 @@ shape = SubResource("CapsuleShape2D_m5b24")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(-1.43051e-06, 1)
-scale = Vector2(11, 1)
+scale = Vector2(3.6, 1)
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

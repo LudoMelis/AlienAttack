@@ -27,7 +27,7 @@ func shoot():
 	var rocketInstance = rocketScene.instantiate()
 	rocketContainer.add_child(rocketInstance)
 	rocketInstance.global_position = global_position
-	rocketInstance.global_position.x += 50
+	rocketInstance.global_position.x += 15
 	shootSound.play()
 	
 func takeDamage():

@@ -5,8 +5,8 @@
 [ext_resource type="AudioStream" uid="uid://dfn6esc68sgfw" path="res://assets/audio/sfx_laser2.wav" id="3_io514"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fg0dv"]
-radius = 53.0
-height = 126.0
+radius = 28.0
+height = 56.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_mask = 2
@@ -16,10 +16,11 @@ script = ExtResource("1_k2olc")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-19, 2)
 rotation = 1.5708
-scale = Vector2(0.395, 0.395)
+scale = Vector2(0.181941, 0.181941)
 texture = ExtResource("1_7k27n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11, 0)
 shape = SubResource("CapsuleShape2D_fg0dv")
 
 [node name="RocketContainer" type="Node" parent="."]
