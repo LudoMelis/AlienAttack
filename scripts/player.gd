@@ -29,9 +29,8 @@ func shoot():
 	rocketInstance.global_position.x += 50
 	
 func takeDamage():
-	print("damage took")
-#	tookDamage.emit()
-	emit_signal("tookDamage")
+	tookDamage.emit()
+#	emit_signal("tookDamage")
 	
 func die():
 	queue_free()
