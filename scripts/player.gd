@@ -6,6 +6,7 @@ var force = 500
 var _screenSize
 var rocketScene = preload("res://scenes/rocket.tscn")
 @onready var rocketContainer = $RocketContainer
+@onready var shootSound = $ShootSound
 
 	
 func _process(_delta):
@@ -27,10 +28,10 @@ func shoot():
 	rocketContainer.add_child(rocketInstance)
 	rocketInstance.global_position = global_position
 	rocketInstance.global_position.x += 50
+	shootSound.play()
 	
 func takeDamage():
 	tookDamage.emit()
-#	emit_signal("tookDamage")
 	
 func die():
 	queue_free()
