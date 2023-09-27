@@ -65,4 +65,9 @@ position = Vector2(1362, 691)
 wait_time = 2.0
 autostart = true
 
+[node name="PathTimer" type="Timer" parent="."]
+wait_time = 6.66
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="PathTimer" to="." method="_on_path_timer_timeout"]

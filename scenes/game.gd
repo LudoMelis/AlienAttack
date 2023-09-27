@@ -45,5 +45,6 @@ func getGameOverScene():
 	gameOverInstance.setScore(score)
 	ui.add_child(gameOverInstance)
 	
-
-
+func _on_enemy_spawner_path_enemy_spawned(pathEnemyInstance):
+	add_child(pathEnemyInstance)
+	pathEnemyInstance.enemy.connect("died", onEnemyDied)

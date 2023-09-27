@@ -37,3 +37,4 @@ stream = ExtResource("7_wxc8e")
 
 [connection signal="tookDamage" from="Player" to="." method="_on_player_took_damage"]
 [connection signal="enemySpawned" from="EnemySpawner" to="." method="_on_enemy_spawner_enemy_spawned"]
+[connection signal="pathEnemySpawned" from="EnemySpawner" to="." method="_on_enemy_spawner_path_enemy_spawned"]
