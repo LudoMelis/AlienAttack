@@ -22,7 +22,6 @@ func _process(delta):
 func _on_player_took_damage():
 	lives -= 1
 	if lives == 0:
-		print("game over")
 		player.die()
 		getGameOverScene()
 	hud.setLifeLabel(lives)
