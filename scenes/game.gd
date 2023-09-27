@@ -5,11 +5,12 @@ var score = 0
 
 
 @onready var player = $Player
+@onready var hud = $UI/HUD
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	hud.setScoreLabel(score)
+	hud.setLifeLabel(lives)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -17,13 +18,11 @@ func _process(delta):
 
 
 func _on_player_took_damage():
-	print("signal received")
 	lives -= 1
 	if lives == 0:
 		print("game over")
 		player.die()
-		
-	print("lifes left : " + str(lives))
+	hud.setLifeLabel(lives)
 
 
 func _on_enemy_spawner_enemy_spawned(enemyInstance):
@@ -32,4 +31,5 @@ func _on_enemy_spawner_enemy_spawned(enemyInstance):
 
 func onEnemyDied():
 	score += 100
-	print("score : " + str(score))
+	hud.setScoreLabel(score)
+
