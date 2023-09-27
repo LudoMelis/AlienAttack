@@ -1,6 +1,9 @@
 extends Node2D
 
 var lives = 3
+var score = 0
+
+
 @onready var player = $Player
 
 # Called when the node enters the scene tree for the first time.
@@ -21,3 +24,12 @@ func _on_player_took_damage():
 		player.die()
 		
 	print("lifes left : " + str(lives))
+
+
+func _on_enemy_spawner_enemy_spawned(enemyInstance):
+	enemyInstance.connect("died", onEnemyDied)
+	add_child(enemyInstance)
+
+func onEnemyDied():
+	score += 100
+	print("score : " + str(score))
