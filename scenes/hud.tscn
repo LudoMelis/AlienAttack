@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bf4echj700cpv"]
+[gd_scene load_steps=7 format=3 uid="uid://bf4echj700cpv"]
 
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_cwug0"]
 [ext_resource type="FontFile" uid="uid://bb58855dywmh" path="res://assets/font/Kenney Blocks.ttf" id="1_vpbno"]
@@ -9,6 +9,10 @@ font = ExtResource("1_vpbno")
 font_size = 48
 
 [sub_resource type="LabelSettings" id="LabelSettings_50dx8"]
+font = ExtResource("1_vpbno")
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_pw6x8"]
 font = ExtResource("1_vpbno")
 font_size = 48
 
@@ -23,24 +27,32 @@ script = ExtResource("1_cwug0")
 
 [node name="Score" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 264.0
+offset_bottom = 75.0
 text = "SCORE : 0"
 label_settings = SubResource("LabelSettings_dw3mc")
 
 [node name="LifeTextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_top = 64.0
+offset_top = 75.0
 offset_right = 126.0
-offset_bottom = 182.0
+offset_bottom = 193.0
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("3_i2h8b")
 
 [node name="Life" type="Label" parent="."]
 layout_mode = 0
-offset_left = 96.0
-offset_top = 66.0
-offset_right = 180.0
-offset_bottom = 141.0
+offset_left = 88.0
+offset_top = 75.0
+offset_right = 172.0
+offset_bottom = 150.0
 text = "X 0"
 label_settings = SubResource("LabelSettings_50dx8")
+
+[node name="Stage" type="Label" parent="."]
+layout_mode = 0
+offset_left = 983.0
+offset_right = 1247.0
+offset_bottom = 75.0
+text = "STAGE : 1"
+label_settings = SubResource("LabelSettings_pw6x8")

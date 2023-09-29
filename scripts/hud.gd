@@ -3,6 +3,7 @@ extends Control
 
 @onready var scoreLabel = $Score
 @onready var lifeLabel = $Life
+@onready var stageLabel = $Stage
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,3 +19,6 @@ func setScoreLabel(newScore):
 	
 func setLifeLabel(newLife):
 	lifeLabel.text = "X " + str(newLife)
+	
+func setStageLabel(newStage):
+	stageLabel.text = "STAGE : " + str(newStage)
